@@ -11,6 +11,7 @@ import { SameEntityRepo } from "./data/same-entity.repo";
 import { ArgumentError } from "./errors/argument.error";
 import { AuthError } from "./errors/auth.error";
 import { AppService } from "./services/app-service";
+import { DbContext } from "./data/context";
 
 export const sum = (...a: number[]) => a.reduce((acc, val) => acc + val, 0);
 
@@ -22,6 +23,7 @@ export {
   IStore,
   IQuery,
   IResults,
+  DbContext,
   AggregateRoot,
   Collection,
   Predicate,
